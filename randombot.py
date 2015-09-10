@@ -39,20 +39,22 @@ teamnames = [ "Arizona",
 		"Tampa Bay",
 		"Tennessee",
 		"Washington" ]
+
+MAX_POINTS = 50
 		
 
 # Game Picks
 print "Game Picks"
 print "----------"
 for x in range(0, int(sys.argv[1])):
-	print "Game #%s: %s" % (x+1, pick[random.randint(0,1)])
+	print "Game #%d: %s" % (x+1, pick[random.randint(0,1)])
 
 # Tiebreaker #1
 print
 print "Tiebreaker #1"
 print "-------------"
-print "Game #1: %d @ %d" % (random.randint(0,50), random.randint(0,50))
-print "Game #2: %d @ %d" % (random.randint(0,50), random.randint(0,50))
+print "Game #1: %d @ %d" % (random.randint(0,MAX_POINTS), random.randint(0,MAX_POINTS))
+print "Game #2: %d @ %d" % (random.randint(0,MAX_POINTS), random.randint(0,MAX_POINTS))
 print "-------------"
 
 # Tiebreaker #2
